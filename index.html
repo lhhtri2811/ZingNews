@@ -37,9 +37,365 @@
   </head>
   <body>
     <div id="app">
-      <header id="header"></header>
-      <div id="container"></div>
-      <footer id="footer"></footer>
+      <header id="z-header">
+        <div class="grid wide page-wrapper">
+          <div class="header">
+            <div class="header__left">
+              <a
+                href="./index.html"
+                title="Zing News - Thông tin uy tín, hình ảnh chất lượng"
+                class="header__logo"
+              >
+                <img src="./assets/images/z-icons/logo-zing-home.svg" alt="" />
+                <span>Tạp trí tri thức trực tuyến</span>
+              </a>
+            </div>
+            <div class="header__center">
+              <ul class="header__nav">
+                <li class="h-nav__item">
+                  <a href="category.html" title="category">Xuất bản</a>
+                </li>
+                <li class="h-nav__item">
+                  <a href="category.html" title="category">Kinh doanh</a>
+                </li>
+                <li class="h-nav__item">
+                  <a href="category.html" title="category">Công nghệ</a>
+                </li>
+                <li class="h-nav__item">
+                  <a href="category.html" title="category">Thể thao</a>
+                </li>
+                <li class="h-nav__item">
+                  <a href="category.html" title="category">Giải trí</a>
+                </li>
+                <li class="h-nav__item">
+                  <a href="category.html" title="category">Đời sống</a>
+                </li>
+                <li class="h-nav__item">
+                  <a href="category.html" title="category">Lifestyle</a>
+                </li>
+                <li class="h-nav__item more">
+                  <button
+                    onclick="showPopup(this, 'category-popup')"
+                    class="btn"
+                    title="btn-menu"
+                    type="button"
+                  >
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="header__right">
+              <div class="header__search">
+                <form class="header__search-form" action="" method="get">
+                  <input
+                    type="text"
+                    name="header-search"
+                    title="h-search"
+                    required
+                    placeholder="Tìm kiếm..."
+                  />
+                  <button
+                    onclick="handleSearchButton(this)"
+                    class="btn btn__search"
+                    type="button"
+                    title="h-search"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="category-popup" class="category-popup">
+          <div class="grid page-wrapper">
+            <div class="category-menu">
+              <div class="grid wide">
+                <div class="normal-category">
+                  <div class="row">
+                    <div class="col col-lg-3">
+                      <div class="block-category">
+                        <h3 class="b-cate__heading">
+                          <a href="category.html">Xuất bản</a>
+                        </h3>
+                        <ul class="b-cate__sub">
+                          <li>
+                            <a href="categorydetail.html">Tin tức xuất bản</a>
+                          </li>
+                          <li><a href="categorydetail.html">Sách hay</a></li>
+                          <li>
+                            <a href="categorydetail.html"
+                              >Nghiên cứu xuất bản</a
+                            >
+                          </li>
+                          <li><a href="categorydetail.html">Tác giả</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col col-lg-3">
+                      <div class="block-category">
+                        <h3 class="b-cate__heading">
+                          <a href="category.html">Kinh doanh</a>
+                        </h3>
+                        <ul class="b-cate__sub">
+                          <li>
+                            <a href="categorydetail.html">Bất động sản</a>
+                          </li>
+                          <li>
+                            <a href="categorydetail.html">Tiền của tôi</a>
+                          </li>
+                          <li><a href="categorydetail.html">Tiêu dùng</a></li>
+                          <li><a href="categorydetail.html">Kinh tế số</a></li>
+                          <li>
+                            <a href="categorydetail.html"
+                              >Thông tin doanh nghiệp</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col col-lg-3">
+                      <div class="block-category">
+                        <h3 class="b-cate__heading">
+                          <a href="category.html">Công nghệ</a>
+                        </h3>
+                        <ul class="b-cate__sub">
+                          <li><a href="categorydetail.html">Blockchain</a></li>
+                          <li><a href="categorydetail.html">Mobile</a></li>
+                          <li><a href="categorydetail.html">Gadget</a></li>
+                          <li><a href="categorydetail.html">Internet</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col col-lg-3">
+                      <div class="block-category">
+                        <h3 class="b-cate__heading">
+                          <a href="category.html">Thể thao</a>
+                        </h3>
+                        <ul class="b-cate__sub">
+                          <li>
+                            <a href="categorydetail.html">World Cup 2022</a>
+                          </li>
+                          <li>
+                            <a href="categorydetail.html">Bóng đá Việt Nam</a>
+                          </li>
+                          <li><a href="categorydetail.html">Bóng đá Anh</a></li>
+                          <li><a href="categorydetail.html">Võ thuật</a></li>
+                          <li><a href="categorydetail.html">eSports</a></li>
+                          <li>
+                            <a href="categorydetail.html"
+                              >Dinh dưỡng Thể thao</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col col-lg-3">
+                      <div class="block-category">
+                        <h3 class="b-cate__heading">
+                          <a href="category.html">Giải trí</a>
+                        </h3>
+                        <ul class="b-cate__sub">
+                          <li><a href="categorydetail.html">Sao</a></li>
+                          <li><a href="categorydetail.html">Âm nhạc</a></li>
+                          <li><a href="categorydetail.html">Phim ảnh</a></li>
+                          <li><a href="categorydetail.html">Thời trang</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col col-lg-3">
+                      <div class="block-category">
+                        <h3 class="b-cate__heading">
+                          <a href="category.html">Đời sống</a>
+                        </h3>
+                        <ul class="b-cate__sub">
+                          <li><a href="categorydetail.html">Giới trẻ</a></li>
+                          <li><a href="categorydetail.html">Xu hướng</a></li>
+                          <li><a href="categorydetail.html">Sống đẹp</a></li>
+                          <li><a href="categorydetail.html">Gender</a></li>
+                          <li><a href="categorydetail.html">Sự kiện</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col col-lg-3">
+                      <div class="block-category">
+                        <h3 class="b-cate__heading">
+                          <a href="category.html">Sách hay</a>
+                        </h3>
+                        <ul class="b-cate__sub">
+                          <li><a href="categorydetail.html">Ebook</a></li>
+                          <li><a href="categorydetail.html">Audiobook</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col col-lg-3">
+                      <div class="block-category">
+                        <h3 class="b-cate__heading">
+                          <a href="category.html">Tác giả</a>
+                        </h3>
+                        <!-- <ul class="b-cate__sub">
+                          <li><a href="categorydetail.html"></a></li>
+                          <li><a href="categorydetail.html"></a></li>
+                          <li><a href="categorydetail.html"></a></li>
+                          <li><a href="categorydetail.html"></a></li>
+                        </ul> -->
+                      </div>
+                    </div>
+                    <div class="col col-lg-3">
+                      <div class="block-category">
+                        <h3 class="b-cate__heading">
+                          <a href="category.html">Xã hội</a>
+                        </h3>
+                        <ul class="b-cate__sub">
+                          <li><a href="categorydetail.html">Đô thị</a></li>
+                          <li><a href="categorydetail.html">Giao thông</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col col-lg-3">
+                      <div class="block-category">
+                        <h3 class="b-cate__heading">
+                          <a href="category.html">Thế giới</a>
+                        </h3>
+                        <ul class="b-cate__sub">
+                          <li><a href="categorydetail.html">Tư liệu</a></li>
+                          <li><a href="categorydetail.html">Phân tích</a></li>
+                          <li>
+                            <a href="categorydetail.html"
+                              >Người Việt 4 phương</a
+                            >
+                          </li>
+                          <li><a href="categorydetail.html">Tầm nhìn</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col col-lg-3">
+                      <div class="block-category">
+                        <h3 class="b-cate__heading">
+                          <a href="category.html">Sức khỏe</a>
+                        </h3>
+                        <ul class="b-cate__sub">
+                          <li><a href="categorydetail.html">Hậu Covid</a></li>
+                          <li><a href="categorydetail.html">Khỏe đẹp</a></li>
+                          <li><a href="categorydetail.html">Dinh dưỡng</a></li>
+                          <li><a href="categorydetail.html">Mẹ và bé</a></li>
+                          <li>
+                            <a href="categorydetail.html">Bệnh thường gặp</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col col-lg-3">
+                      <div class="block-category">
+                        <h3 class="b-cate__heading">
+                          <a href="category.html">Giáo dục</a>
+                        </h3>
+                        <ul class="b-cate__sub">
+                          <li>
+                            <a href="categorydetail.html">Tuyển sinh 2022</a>
+                          </li>
+                          <li><a href="categorydetail.html">Du học</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col col-lg-3">
+                      <div class="block-category">
+                        <h3 class="b-cate__heading">
+                          <a href="category.html">Pháp luật</a>
+                        </h3>
+                        <ul class="b-cate__sub">
+                          <li><a href="categorydetail.html">Pháp đình</a></li>
+                          <li><a href="categorydetail.html">Vụ án</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col col-lg-3">
+                      <div class="block-category">
+                        <h3 class="b-cate__heading">
+                          <a href="category.html">Du lịch</a>
+                        </h3>
+                        <ul class="b-cate__sub">
+                          <li>
+                            <a href="categorydetail.html">Địa điểm du lịch</a>
+                          </li>
+                          <li>
+                            <a href="categorydetail.html"
+                              >Kinh nghiệm du lịch</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col col-lg-3">
+                      <div class="block-category">
+                        <h3 class="b-cate__heading">
+                          <a href="category.html">Chuyển đổi số</a>
+                        </h3>
+                        <ul class="b-cate__sub">
+                          <li><a href="categorydetail.html">Internet</a></li>
+                          <li><a href="categorydetail.html">Game</a></li>
+                          <li><a href="categorydetail.html">Review</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="channels-menu">
+              <div class="grid wide page-wrapper">
+                <ul>
+                  <li>
+                    <a href="channelsmenu.html"
+                      ><img
+                        src="./assets/images/z-icons/podcast_logo_white.svg"
+                        alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="channelsmenu.html"
+                      ><img
+                        src="./assets/images/z-icons/longform-logo-white_1.svg"
+                        alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="channelsmenu.html"
+                      ><img
+                        src="./assets/images/z-icons/story-logo-white.svg"
+                        alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="channelsmenu.html"
+                      ><img
+                        src="./assets/images/z-icons/lens-logo-white_1.svg"
+                        alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="channelsmenu.html"
+                      ><img
+                        src="./assets/images/z-icons/interactive-logo-white.svg"
+                        alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="channelsmenu.html"
+                      ><img
+                        src="./assets/images/z-icons/logo-lifestyle-dark.svg"
+                        alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="z-container"></div>
+      <footer id="z-footer"></footer>
     </div>
     <script src="./assets/js/index.js"></script>
   </body>

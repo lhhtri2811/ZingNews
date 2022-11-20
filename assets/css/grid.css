@@ -5,7 +5,7 @@
 }
 
 .grid.wide {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -24,7 +24,6 @@
 .col {
   padding-left: 4px;
   padding-right: 4px;
-  margin-bottom: 16px;
 }
 
 .row.no-gutters .col {

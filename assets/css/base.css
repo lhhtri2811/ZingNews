@@ -1,10 +1,14 @@
 :root {
+  /* values */
+  --header-height: 52px;
   /* color */
   --color-theme-1: #04b2f7;
   --color-theme-2: #dd3333;
   --color-theme-3: #141329;
   --color-theme-4: #006ba0;
   --color-theme-5: #ffde76;
+  --color-theme-6: #444;
+  --color-theme-7: #333240;
   --color-blue: #0d6efd;
   --color-indigo: #6610f2;
   --color-purple: #6f42c1;
@@ -47,4 +51,44 @@ html {
   line-height: 1.4;
   box-sizing: inherit;
   font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1.8rem;
+  height: 100%;
+  cursor: pointer;
+}
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
