@@ -9,3 +9,8 @@ function showPopup(btn, id) {
   popup.classList.toggle("active");
   btn.parentElement.classList.toggle("active");
 }
+
+function handleShowWeatherFilter(btn) {
+  var icon = btn.querySelector("i");
+  btn.classList.toggle("active");
+}
