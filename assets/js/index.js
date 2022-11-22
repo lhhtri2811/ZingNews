@@ -14,3 +14,15 @@ function handleShowWeatherFilter(btn) {
   var icon = btn.querySelector("i");
   btn.classList.toggle("active");
 }
+
+function handlePreButton(listId) {
+  var list = document.getElementById(listId);
+  var listWidth = list.offsetWidth;
+  list.scrollLeft -= listWidth;
+}
+
+function handleNextButton(listId) {
+  var list = document.getElementById(listId);
+  var listWidth = list.offsetWidth;
+  list.scrollLeft += listWidth;
+}
