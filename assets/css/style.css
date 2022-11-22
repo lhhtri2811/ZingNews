@@ -705,3 +705,15 @@
 #section-podcast .section__content .article + .article {
   margin-top: 24px;
 }
+
+#section-lifestyle {
+  margin-top: 32px;
+}
+
+#section-lifestyle .article__meta {
+  display: none;
+}
+
+[data-content="newsfeatured"] .article {
+  margin-bottom: 32px;
+}
