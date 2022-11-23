@@ -717,3 +717,53 @@
 [data-content="newsfeatured"] .article {
   margin-bottom: 32px;
 }
+
+.section.ads {
+  margin-top: 32px;
+}
+
+.section.ads a {
+  overflow: hidden;
+}
+
+.section.ads img {
+  display: block;
+  width: 100%;
+  transform: scale(1.3);
+}
+
+.z-ads + .z-ads {
+  margin-top: 32px;
+}
+
+.z-ads {
+  position: relative;
+}
+
+.z-ads .btn-wrapper {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+}
+
+.z-ads .btn-wrapper button {
+  font-size: 3rem;
+  color: var(--color-gray-600);
+}
+
+.z-ads .btn-wrapper .undo-icon {
+  display: none;
+}
+
+.z-ads .btn-wrapper.active .undo-icon {
+  display: block;
+}
+
+.z-ads .btn-wrapper.active .close-icon {
+  display: none;
+}
+
+.z-ads a.active {
+  display: none;
+}

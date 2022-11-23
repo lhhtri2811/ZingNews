@@ -26,3 +26,11 @@ function handleNextButton(listId) {
   var listWidth = list.offsetWidth;
   list.scrollLeft += listWidth;
 }
+
+function handleCloseAds(btn) {
+  var ads = btn.parentElement.nextElementSibling;
+  ads.classList.toggle("active");
+
+  var btnWrapper = btn.parentElement;
+  btnWrapper.classList.toggle("active");
+}
