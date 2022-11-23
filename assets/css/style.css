@@ -767,3 +767,19 @@
 .z-ads a.active {
   display: none;
 }
+
+#section-category {
+  margin-top: 32px;
+}
+
+#section-category .section__heading h3 {
+  font-size: 1.8rem;
+}
+
+#section-category .box-category {
+  margin-bottom: 32px;
+}
+
+#section-category .article__meta {
+  display: none;
+}
