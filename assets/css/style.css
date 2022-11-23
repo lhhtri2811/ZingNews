@@ -783,3 +783,65 @@
 #section-category .article__meta {
   display: none;
 }
+
+#section-magazine {
+  margin-top: 32px;
+}
+
+#section-magazine .section__heading {
+  justify-content: space-between;
+}
+
+.article--magazine {
+  max-width: 25%;
+  flex: 0 0 25%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.article--magazine .article__thumbnail a {
+  padding-bottom: 150%;
+}
+
+.article--magazine .article__thumbnail img {
+  transition: all ease 0.7s;
+}
+
+.article--magazine:hover .article__thumbnail img {
+  transform: scale(1.4);
+}
+
+.article--magazine .article__desc {
+  margin: 0 4px;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+}
+
+.article--magazine .article__cate {
+  color: var(--color-dark);
+  padding: 2px 24px;
+  background-color: var(--color-theme-5);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.article--magazine .article__title {
+  color: var(--color-white);
+  padding: 16px;
+}
+
+.article--magazine .article__title a {
+  text-shadow: 1px 1px var(--color-dark);
+}
