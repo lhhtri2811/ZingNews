@@ -228,6 +228,7 @@
   width: 100%;
   top: var(--header-height);
   background-color: var(--color-white);
+  padding-bottom: 32px;
 }
 
 #section-widget {
@@ -844,4 +845,56 @@
 
 .article--magazine .article__title a {
   text-shadow: 1px 1px var(--color-dark);
+}
+
+#section-video {
+  margin-top: 32px;
+}
+
+.video-wrapper {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+}
+
+.video-player {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-time-count {
+  position: absolute;
+  color: var(--color-white);
+  right: 4px;
+  bottom: 4px;
+  padding: 4px;
+  background-color: var(--color-dark);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.video-sidebar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.article-list-video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  overflow-y: auto;
 }
