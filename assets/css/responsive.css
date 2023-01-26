@@ -56,11 +56,40 @@
     padding-top: 50%;
     margin-top: 16px;
   }
-  .article-list-video {
-    /* display: flex; */
-  }
   .copyright-info {
     display: unset;
+  }
+  /* category */
+  .category__heading {
+    margin-top: 24px;
+  }
+  .category {
+    padding: 0 12px;
+  }
+
+  .box-6-item-layout .article-list {
+    display: flex;
+    margin-left: -4px;
+    margin-right: -4px;
+  }
+  .box-6-item-layout .article {
+    margin-top: 0;
+    display: unset;
+    max-width: 25%;
+    flex: 0 0 25%;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .box-6-item-layout .article__desc {
+    padding-left: 0;
+    padding-top: 12px;
+  }
+  .box-6-item-layout .article__thumbnail {
+    width: 100%;
+  }
+  .section-hot-48h {
+    display: none;
   }
 }
 /* Mobile width < 740px */
