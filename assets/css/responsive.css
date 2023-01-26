@@ -24,6 +24,18 @@
   .newsfeatured {
     order: -1;
   }
+  .section__heading ul {
+    display: none;
+  }
+
+  #section-foryou .article-list--horizontal .article {
+    max-width: 33.33333%;
+    flex: 0 0 33.33333%;
+  }
+  #section-mostview,
+  #section-podcast {
+    display: none;
+  }
 }
 /* Mobile width < 740px */
 @media (max-width: 739px) {
