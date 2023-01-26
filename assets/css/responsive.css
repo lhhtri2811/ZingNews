@@ -1,6 +1,30 @@
-/* tablet */
+/* Tablet 740px <= width < 1024 */
 @media (min-width: 740px) and (max-width: 1023px) {
+  .header__center {
+    order: -1;
+  }
+  .h-nav__item:not(:last-child) {
+    display: none;
+  }
+  .h-nav__item:last-child {
+    margin-left: 0;
+  }
+  .h-nav__item:last-child button {
+    padding: 0 16px;
+  }
+  #section-widget {
+    display: none;
+  }
+  #z-container {
+    padding-top: 64px;
+  }
+  #section-featured .article__desc > *:not(.article__title) {
+    display: none;
+  }
+  .newsfeatured {
+    order: -1;
+  }
 }
-/* mobile */
+/* Mobile width < 740px */
 @media (max-width: 739px) {
 }
