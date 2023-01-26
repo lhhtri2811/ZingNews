@@ -426,6 +426,10 @@
 
 .article__title a {
   color: currentColor;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow-y: hidden;
 }
 
 .article__thumbnail:hover + .article__desc .article__title,
@@ -474,6 +478,10 @@
   font-size: 1.6rem;
   color: var(--color-gray-700);
   margin: 16px 0 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow-y: hidden;
 }
 
 .article__related {
