@@ -36,6 +36,32 @@
   #section-podcast {
     display: none;
   }
+  #section-lifestyle .article__related {
+    display: none;
+  }
+  #section-lifestyle [data-content="newstrending"] {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #section-lifestyle [data-content="newstrending"] .article {
+    max-width: 50%;
+    flex: 0 0 50%;
+    margin: unset;
+  }
+  .article--magazine {
+    max-width: 33.33333%;
+    flex: 0 0 33.33333%;
+  }
+  .video-sidebar {
+    padding-top: 50%;
+    margin-top: 16px;
+  }
+  .article-list-video {
+    /* display: flex; */
+  }
+  .copyright-info {
+    display: unset;
+  }
 }
 /* Mobile width < 740px */
 @media (max-width: 739px) {
