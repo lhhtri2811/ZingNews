@@ -91,6 +91,25 @@
   .section-hot-48h {
     display: none;
   }
+  /* the article */
+  .the-article .content {
+    padding-right: unset;
+  }
+  .the-article .sidebar {
+    display: none;
+  }
+  #section-recommendation .article {
+    display: flex;
+    padding-bottom: 12px;
+  }
+
+  #section-recommendation .article .article__thumbnail {
+    width: 36%;
+  }
+  #section-recommendation .article .article__desc {
+    flex: 1;
+    padding-left: 16px;
+  }
 }
 /* Mobile width < 740px */
 @media (max-width: 739px) {
