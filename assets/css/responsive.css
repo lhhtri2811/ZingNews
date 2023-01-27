@@ -232,4 +232,38 @@
   .section-latest .article__summary {
     display: none;
   }
+  /* the article */
+  .the-article {
+    padding: 0px;
+  }
+  .the-article__cate a {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--color-theme-4);
+  }
+  .the-article__title h1 {
+    font-size: 2.6rem;
+  }
+  .the-article .content {
+    padding-right: unset;
+  }
+  .sidebar {
+    display: none;
+  }
+  .the-article__tag i {
+    font-size: 3rem;
+    color: var(--color-theme-1);
+  }
+  .the-article__tag a {
+    font-size: 1.6rem;
+  }
+  #section-recommendation .article__desc > *:not(.article__title) {
+    display: none;
+  }
+  #section-recommendation .article {
+    margin-bottom: 8px;
+  }
+  #section-nextreads .article__summary {
+    display: none;
+  }
 }
